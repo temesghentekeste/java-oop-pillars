@@ -1,6 +1,6 @@
 package org.example.oop_pillars._02_inheritance._02_extensibility;
 
-public class ExtensibilityRunner {
+public class MaintainabilityRunner {
     public static void main(String[] args) {
         System.out.println("Saving account transactions:");
         SavingsAccount savingAccount = new SavingsAccount("00900675420", "password", 45000, 20);
