@@ -52,12 +52,12 @@ public class BankAccount {
         return "encrypted_" + password;
     }
 
-    private boolean authenticate(String enteredPassword) {
+    boolean authenticate(String enteredPassword) {
         return encryptedPassword.equals(encryptPassword(enteredPassword));
     }
 
     // New logging method
-    private void logTransaction(String type, double amount) {
+    void logTransaction(String type, double amount) {
         System.out.println(type + " of $" + amount + " logged.");
     }
 
