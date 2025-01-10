@@ -5,9 +5,7 @@ public class BankAccount {
     private double balance;
     private String encryptedPassword;
 
-    public BankAccount(String accountNumber,
-                       String password,
-                       double initialBalance) {
+    public BankAccount(String accountNumber, String password, double initialBalance) {
         this.accountNumber = accountNumber;
         this.encryptedPassword = encryptPassword(password);
         this.balance = initialBalance;
@@ -55,7 +53,7 @@ public class BankAccount {
     }
 
     private boolean authenticate(String enteredPassword) {
-        return this.encryptedPassword.equals(enteredPassword);
+        return encryptedPassword.equals(encryptPassword(enteredPassword));
     }
 
     // New logging method
