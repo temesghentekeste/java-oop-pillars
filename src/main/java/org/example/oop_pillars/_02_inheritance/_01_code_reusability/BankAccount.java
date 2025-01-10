@@ -1,4 +1,4 @@
-package org.example.oop_pillars._02_inheritance;
+package org.example.oop_pillars._02_inheritance._01_code_reusability;
 
 public class BankAccount {
     private String accountNumber;
