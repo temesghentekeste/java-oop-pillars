@@ -58,7 +58,7 @@ public class BankAccount {
 
     // New logging method
     void logTransaction(String type, double amount) {
-        System.out.println(type + " of $" + amount + " logged.");
+        System.out.println(type + " of $" + amount + " logged on " + java.time.LocalDateTime.now());
     }
 
 }
