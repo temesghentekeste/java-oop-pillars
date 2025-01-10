@@ -1,5 +1,7 @@
 package org.example.oop_pillars._02_inheritance._04_scalability;
 
+import com.sun.security.jgss.GSSUtil;
+
 public class ScalabilityRunner {
     public static void main(String[] args) {
         System.out.println("Saving account transactions:");
@@ -16,6 +18,12 @@ public class ScalabilityRunner {
         checkingAccount.withdraw(3000, "abc");
         checkingAccount.withdraw(53000, "abc");
         checkingAccount.withdraw(90000, "abc");
+
+        System.out.println("Fixed deposit account transactions");
+        FixedDepositAccount fixedDepositAccount = new FixedDepositAccount("100030001", "xyz", 50000000, 6);
+        System.out.println("Lock-in period: " + fixedDepositAccount.getLockInPeriod());
+        fixedDepositAccount.withdraw(40000, "xyz");
+
 
 
     }
