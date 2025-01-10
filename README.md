@@ -46,13 +46,58 @@ public class BankAccount {
 ```
 In this example, the balance field is private, and access to it is controlled via the getBalance(), deposit(), and withdraw() methods. This ensures that the balance can only be modified through controlled actions, preventing direct external manipulation.
 
+
+## 2. Inheritance
+
+This section explores Inheritance, another fundamental principle of Object-Oriented Programming.
+
+What is Inheritance?
+
+Inheritance allows a class (called the child or subclass) to acquire the properties and behaviors of another class (called the parent or superclass). It promotes code reuse and extends functionality efficiently.
+
+Key benefits of inheritance include:
+
+- **Code Reusability**: Share common functionality among multiple classes without duplication.
+
+- **Extensibility**: Add or override functionality in subclasses to meet specific requirements.
+
+- **Maintainability**: Centralize common behavior, making updates and changes easier to manage.
+
+### Examples: Creating Specialized Accounts
+
+In this repository, you will find examples of inheritance implemented using the BankAccount class discussed in the Encapsulation section. For instance:
+```java
+public class SavingsAccount extends BankAccount {
+    private double interestRate;
+
+    public SavingsAccount(String accountNumber, String password, double initialBalance, double interestRate) {
+        super(accountNumber, password, initialBalance);
+        this.interestRate = interestRate;
+    }
+
+    public double calculateInterest(String enteredPassword) {
+        double balance = getBalance(enteredPassword);
+        if (balance != -1) {
+            return balance * (interestRate / 100);
+        } else {
+            return 0;
+        }
+    }
+}
+```
+Here, the SavingsAccount class extends the BankAccount class, reusing existing methods like getBalance while adding new functionality specific to savings accounts.
+
 ### Blog Post
-For a detailed explanation of Encapsulation and its role in OOP, check out the blog post:
+- For a detailed explanation of Encapsulation and its role in OOP, check out the blog post:
 [Unlocking the Power of Encapsulation in Java](https://uandiprogramming.blogspot.com/2024/12/unlocking-power-of-encapsulation-in.html)
+- To learn more about inheritance and its applications, check out the blog post:
+  [Unlocking the Power of Inheritance in Java](https://uandiprogramming.blogspot.com/2025/01/unlocking-power-of-inheritance-in-java.html)
 
 ### Getting Started
 - Clone the repository:git clone https://github.com/temesghentekeste/oop-fundamentals-java.git
 - Navigate to the Encapsulation folder or directly start exploring the code examples provided.
+- Navigate to the Inheritance folder in the repository to explore the examples provided.
+  - Try extending the BankAccount class yourself to create new account types with specialized behaviors.
 
 ### Contributing
 If you have improvements, bug fixes, or additional examples related to Encapsulation, feel free to fork the repository and submit a pull request.
