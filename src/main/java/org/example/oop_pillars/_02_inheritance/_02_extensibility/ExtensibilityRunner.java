@@ -14,6 +14,8 @@ public class ExtensibilityRunner {
         System.out.println("Checking account transactions:");
         CheckingAccount checkingAccount = new CheckingAccount("200908765002", "abc", 55000, 5000);
         checkingAccount.withdraw(3000, "abc");
+        checkingAccount.withdraw(53000, "abc");
+        checkingAccount.withdraw(90000, "abc");
 
     }
 }
