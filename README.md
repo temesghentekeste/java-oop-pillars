@@ -94,7 +94,7 @@ Here, the SavingsAccount class extends the BankAccount class, reusing existing m
   [Unlocking the Power of Inheritance in Java](https://uandiprogramming.blogspot.com/2025/01/unlocking-power-of-inheritance-in-java.html)
 
 ### Getting Started
-- Clone the repository:git clone https://github.com/temesghentekeste/oop-fundamentals-java.git
+- Clone the repository:git clone https://github.com/temesghentekeste/java-oop-pillars.git
 - Navigate to the Encapsulation folder or directly start exploring the code examples provided.
 - Navigate to the Inheritance folder in the repository to explore the examples provided.
   - Try extending the BankAccount class yourself to create new account types with specialized behaviors.
@@ -104,4 +104,4 @@ If you have improvements, bug fixes, or additional examples related to Encapsula
 
 GitHub Repository
 You can access the entire source code of this project on GitHub:
-https://github.com/temesghentekeste/oop-fundamentals-java
+https://github.com/temesghentekeste/java-oop-pillars
